@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:input_widgets/TextField.dart';
 
+import 'Checkbox_switch.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -23,7 +25,12 @@ class InputWidgets extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          TextFields(),
+          Expanded(
+            child: TextFields(),
+          ),
+          Expanded(
+            child: CheckboxSwitch(),
+          ),
         ],
       ),
     );
