@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:input_widgets/TextField.dart';
+import 'package:input_widgets/radiobutton.dart';
 
 import 'Checkbox_switch.dart';
 
@@ -31,6 +32,9 @@ class InputWidgets extends StatelessWidget {
           Expanded(
             child: CheckboxSwitch(),
           ),
+          Expanded(
+            child: RadioButton(),
+          )
         ],
       ),
     );

@@ -12,7 +12,7 @@ class TextFields extends StatelessWidget {
             width: 400, //입력창 밑줄길이 조절
             child: Container(
               child: TextField(),
-              padding: EdgeInsets.only(left: 20, bottom: 30), //아래 textfield와 간격
+              padding: EdgeInsets.only(left: 20, bottom: 10), //아래 textfield와 간격
             ),
           ),
           SizedBox(
@@ -22,7 +22,7 @@ class TextFields extends StatelessWidget {
                   decoration: InputDecoration(
                 labelText: '여기에 입력하세요',
               )),
-              padding: EdgeInsets.only(left: 20, bottom: 30),
+              padding: EdgeInsets.only(left: 20, bottom: 10),
             ),
           ),
           SizedBox(
