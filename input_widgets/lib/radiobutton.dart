@@ -13,9 +13,9 @@ class _RadioButtonState extends State<RadioButton> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('radio button'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('radio button'),
+      // ),
       body: Padding(
         padding: EdgeInsets.all(8.0),
         child: Container(

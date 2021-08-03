@@ -11,9 +11,9 @@ class _CheckboxSwitchState extends State<CheckboxSwitch> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('checkbox와 switch'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('checkbox와 switch'),
+      // ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Center(
