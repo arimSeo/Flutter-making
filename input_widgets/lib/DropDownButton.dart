@@ -17,14 +17,14 @@ class _DropdownState extends State<Dropdown> {
           (value) {
             return DropdownMenuItem(
               value: value,
-              // value: value,
               child: Text(value),
             );
           },
-        ).toList(),
+        ).toList(), //list로 되면서 value가 Object타입(null-safety적용후)
         onChanged: (value) {
           setState(() {
-            _selectedValue = value;
+            _selectedValue =
+                value.toString(); //그래서 좌측 String타입에 맞춰 string으로 변환시켜줌
           });
         },
       ),

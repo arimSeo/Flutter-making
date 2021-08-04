@@ -24,7 +24,6 @@ class MyApp extends StatelessWidget {
               Container(
                 child: HeroPage1(),
               ),
-              // HeroPage2()
             ],
           ),
         ));
