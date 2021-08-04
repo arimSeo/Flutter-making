@@ -27,18 +27,17 @@ class InputWidgets extends StatelessWidget {
       body: Column(
         // mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Expanded(
-            child: TextFields(),
-          ),
+          TextFields(),
           Expanded(
             child: CheckboxSwitch(),
           ),
           Expanded(
             child: RadioButton(),
           ),
-          // Expanded(
-          //   child: Dropdown(),
-          // )
+          Dropdown(),
+          SizedBox(
+            height: 40,
+          )
         ],
       ),
     );
