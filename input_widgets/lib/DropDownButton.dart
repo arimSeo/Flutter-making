@@ -20,11 +20,12 @@ class _DropdownState extends State<Dropdown> {
               child: Text(value),
             );
           },
-        ).toList(), //list로 되면서 value가 Object타입(null-safety적용후)
+        ).toList(), //list로 되면서 value가 Object타입이 됨. -타입일치x 에러
+        //(null-safety적용후)Object 타입: Iterable, num, List, double, int / String은 String? 로 null허용 가능
         onChanged: (value) {
           setState(() {
-            _selectedValue =
-                value.toString(); //그래서 좌측 String타입에 맞춰 string으로 변환시켜줌
+            _selectedValue = value.toString();
+            //그래서 좌측 String타입에 맞춰 string으로 변환시켜줌
           });
         },
       ),
