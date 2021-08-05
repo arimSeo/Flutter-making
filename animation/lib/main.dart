@@ -1,3 +1,5 @@
+import 'package:animation/AnimatedContainer.dart';
+import 'package:animation/SilverAppBar.dart';
 import 'package:animation/hero.dart';
 import 'package:flutter/material.dart';
 
@@ -12,18 +14,24 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Flutter Animation',
         theme: ThemeData(
-          primarySwatch: Colors.deepOrange,
+          primaryColor: Colors.white,
         ),
         //따로 class로 빼지 않고 바로 작성하는 방식으로.
         home: Scaffold(
-          appBar: AppBar(
-            title: Text('animation효과 위젯'),
-          ),
+          // appBar: AppBar(
+          //   title: Text('animation효과 위젯'),
+          // ),
           body: Column(
             children: <Widget>[
-              Container(
-                child: HeroPage1(),
+              Expanded(
+                child: SliverPage(),
               ),
+
+              // Text('이미지 클릭하고 전체화면 보기'),
+              // HeroPage1(),
+              // Text('이미지 클릭하고 크게보기'),
+              // Text('다시 클릭하면 원래대로'),
+              // AnimatedContainerPage(),
             ],
           ),
         ));
